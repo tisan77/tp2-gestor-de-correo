@@ -1,0 +1,15 @@
+GestorCorreo\Interfaces\ISurnameable.class
+GestorCorreo\Filters\TitleFilter.class
+GestorCorreo\Mail.class
+GestorCorreo\User.class
+GestorCorreo\Contact.class
+GestorCorreo\Person.class
+GestorCorreo\Filters\TitleFromFilter.class
+GestorCorreo\Filters\TitleMessageFilter.class
+GestorCorreo\Filters\Filter.class
+GestorCorreo\Box.class
+GestorCorreo\Filters\FromFilter.class
+GestorCorreo\MailManager.class
+GestorCorreo\Interfaces\IAdressable.class
+GestorCorreo\Filters\MessageFilter.class
+GestorCorreo\Interfaces\INameable.class

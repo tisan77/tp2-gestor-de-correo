@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Person.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GestorCorreo</a> &gt; <a href="index.source.html" class="el_package">GestorCorreo</a> &gt; <span class="el_source">Person.java</span></div><h1>Person.java</h1><pre class="source lang-java linenums">package GestorCorreo;
+
+import GestorCorreo.Interfaces.IAdressable;
+import GestorCorreo.Interfaces.INameable;
+import GestorCorreo.Interfaces.ISurnameable;
+
+public class Person implements  IAdressable,
+                                ISurnameable,
+                                INameable {
+    private String name;
+    private String surname;
+    private String mailAdress;
+
+<span class="fc" id="L14">    public Person(String name, String surname, String mailAdress){</span>
+<span class="fc" id="L15">        this.name = name;</span>
+<span class="fc" id="L16">        this.surname = surname;</span>
+<span class="fc" id="L17">        this.setMailAdress(mailAdress);</span>
+<span class="fc" id="L18">    }</span>
+
+    public void setName(String name) {
+<span class="fc" id="L21">        this.name = name;</span>
+<span class="fc" id="L22">    }</span>
+
+    public Void setSurname(String surname) {
+<span class="fc" id="L25">        this.surname = surname;</span>
+<span class="fc" id="L26">        return null;</span>
+    }
+
+    public Void setMailAdress(String mailAdress) {
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if(mailAdress.contains(&quot;@&quot;)){</span>
+<span class="fc" id="L31">            this.mailAdress = mailAdress;</span>
+        } else {
+<span class="fc" id="L33">            this.mailAdress = mailAdress + &quot;@femail.ctes&quot;;</span>
+        }
+<span class="fc" id="L35">        return null;</span>
+    }
+
+    public String getName() {
+<span class="fc" id="L39">        return name;</span>
+    }
+
+    public String getSurname() {
+<span class="fc" id="L43">        return surname;</span>
+    }
+
+    public String getMailAdress(){
+<span class="fc" id="L47">        return mailAdress;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

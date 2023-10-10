@@ -2,6 +2,9 @@ package GestorCorreo;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 public class UserTest {
     @Test
@@ -28,5 +31,51 @@ public class UserTest {
         assertEquals("santiaborda@gmail.com", femailcom.getUserList().get(0).getMailAdress());
     }
 
+    @Test
+    public void testSetAndGetMailAdress() {
+        User user = new User("Santi", "Borda", "santi@example.com");
+        
+        user.setMailAdress("newemail@example.com");
+        assertEquals("newemail@example.com", user.getMailAdress());
+    }
 
+    @Test
+    public void testSetAndGetSurname() {
+        User user = new User("Santi", "Borda", "santi@example.com");
+        
+        user.setSurname("NewSurname");
+        assertEquals("NewSurname", user.getSurname());
+    }
+
+    @Test
+    public void testSetAndGetName() {
+        User user = new User("Santi", "Borda", "santi@example.com");
+        
+        user.setName("NewName");
+        assertEquals("NewName", user.getName());
+    }
+
+    @Test
+    public void testGetContactList() {
+        User user = new User("Santi", "Borda", "santi@example.com");
+        Contact contact1 = user.addNewContact("Amigo1", "Apellido1", "friend1@example.com");
+        Contact contact2 = user.addNewContact("Amigo2", "Apellido2", "friend2@example.com");
+
+        ArrayList<Contact> contactList = user.getContactList();
+
+        assertEquals(2, contactList.size());
+        assertTrue(contactList.contains(contact1));
+        assertTrue(contactList.contains(contact2));
+    }
+
+    @Test
+    public void testGetEmail() {
+        User user = new User("Pepe", "Gomez", "pepe@example.com");
+        assertEquals("pepe@example.com", user.getEmail());
+    }
+    @Test
+    public void asd() {
+        User user = new User("Pepe", "Gomez", "pepe@example.com");
+        assertEquals("pepe@example.com", user.getEmail());
+    }
 }

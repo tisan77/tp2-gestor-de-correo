@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+GestorCorreo,GestorCorreo.Filters,TitleMessageFilter,0,35,0,0,0,10,0,2,0,2
+GestorCorreo,GestorCorreo.Filters,FromFilter,0,24,0,0,0,7,0,3,0,3
+GestorCorreo,GestorCorreo.Filters,Filter,14,20,0,0,4,7,2,4,2,4
+GestorCorreo,GestorCorreo.Filters,TitleFilter,0,24,0,0,0,7,0,3,0,3
+GestorCorreo,GestorCorreo.Filters,MessageFilter,0,24,0,0,0,7,0,3,0,3
+GestorCorreo,GestorCorreo.Filters,TitleFromFilter,35,0,0,0,10,0,2,0,2,0
+GestorCorreo,GestorCorreo,Contact,0,56,0,0,0,15,0,7,0,7
+GestorCorreo,GestorCorreo,Person,0,45,0,2,0,16,0,8,0,7
+GestorCorreo,GestorCorreo,Box,0,27,0,0,0,7,0,5,0,5
+GestorCorreo,GestorCorreo,MailManager,0,77,0,2,0,21,0,9,0,8
+GestorCorreo,GestorCorreo,User,0,187,0,2,0,46,0,20,0,19
+GestorCorreo,GestorCorreo,Mail,0,32,0,0,0,11,0,5,0,5

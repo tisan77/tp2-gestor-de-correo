@@ -102,4 +102,8 @@ public class User implements INameable, ISurnameable, IAdressable {
     public Box getInbox() {
         return inbox;
     }
+
+    public String getEmail() {
+        return getMailAdress();
+    }
 }
